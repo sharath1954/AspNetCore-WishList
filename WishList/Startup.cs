@@ -17,7 +17,7 @@ namespace WishList
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            sevices.AddMvc();
+            services.AddMvc();
 
 
         }
@@ -34,7 +34,7 @@ namespace WishList
                 app.UseExceptionHandler("/home/Error");
             }
             app.UseRouting();
-            app.UseEndPoints(endpoints => { endpoints.MapDefaultControllerRoute(); });
+            app.UseEndpoints(endpoints => { endpoints.MapDefaultControllerRoute(); });
             
         }
     }
